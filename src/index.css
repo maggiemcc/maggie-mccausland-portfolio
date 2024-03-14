@@ -1,68 +1,370 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  height: auto;
 }
 
 body {
-  margin: 0;
+  min-height: 100%;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 98);
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+
+:root {
+  /* COLORS */
+  --primary-color: #fff;
+  --secondary-color: #015298;
+  --third-color: #000;
+  --fourth-color: transparent;
+
+  /* MARGINS/PADDING */
+  --primary-margin: 0px;
+  --second-margin: auto;
+  --third-margin: 2%;
+
+  --primary-padding: 2rem;
+
+  /* FONT */
+  --primary-font: 'Courier New', Courier, monospace;
+  --second-font: 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: var(--second-margin);
+  padding: 0;
+  background: linear-gradient(var(--secondary-color), rgb(0, 0, 98));
+  max-width: 1200px;
+  height: 100%;
+  font-family: var(--primary-font);
+}
+
+/* ---------- h1-h6 & p, li, a Elements ---------- */
+h1 a {
+  color: white;
+  font-size: 50px;
+  font-family: var(--primary-font) !important;
+}
+
+h2 {
+  font-family: var(--second-font);
+  font-size: 35px;
+  margin-bottom: var(--third-margin);
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+li,
+a {
+  font-size: 22px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#resume h3 {
+  margin-top: 2%;
+}
+
+/* -------------- Header -------------- */
+header {
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
+  margin: var(--primary-margin);
+  padding: 4% 1%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* ----- NAV ----- */
+nav {
+  width: 100%;
+  margin: var(--second-margin);
+}
+
+nav ul {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+nav li {
+  margin: var(--primary-margin) var(--third-margin);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+nav a:hover, .nav-link-active{
+  font-family: var(--second-font);
+  font-weight: bold;
+}
+
+nav li a {
+  color: var(--primary-color);
+}
+
+.nav-link {
+  font-family: var(--primary-font);
+}
+
+
+/* ---------- Main ---------- */
+main {
+  padding: 2%;
+  margin: var(--second-margin);
+  /* background-color: var(--fourth-color); */
+  height: 100%;
+  min-height: 70vh;
+}
+
+section {
+  padding: var(--primary-padding) 2%;
+  margin-bottom: 3%;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  box-shadow: 10px 10px 8px rgb(18, 0, 78);
+  min-height: 350px;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* --- ABOUT SECTION --- */
+
+#about img {
+  max-height: 250px;
+  border-radius: 5%;
+}
+
+#about div {
+  display: flex;
+  margin: var(--second-margin);
+  max-width: 800px;
+}
+
+#about p {
+  margin: var(--second-margin) 3%;
+}
+
+/* --- WORK SECTION --- */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: var(--second-margin);
+  text-align: center;
+  justify-content: center;
+}
+
+.project {
+  contain: content;
+  max-height: 320px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  box-shadow: 4px 4px 3px rgb(143, 143, 143);
+  opacity: 0.8;
+  margin: var(--third-margin);
+  width: 45%;
+  min-width: 250px;
+  background-color: #015298;
+}
+
+.project-title {
+  padding: 1rem;
+  box-shadow: none;
+  color: var(--primary-color);
+}
+
+.project:hover {
+  opacity: 1;
+  color: var(--secondary-color);
+  border: 5px outset var(--secondary-color)
+}
+
+.project img {
+  width: 100%;
+  display: block;
+}
+
+.project:first-child {
+  width: 100%;
+  max-height: 450px;
+}
+
+.project .apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-apps {
+  max-height: 30px;
+  max-width: 30px;
+  margin: auto 5px;
+}
+
+
+/* --- WORK SECTION --- */
+form {
+  display: block;
+}
+
+form label, form input, form textarea, form button, .errorMessage {
+  margin: 10px auto;
+  display: block;
+  width: 95%;
+  max-width: 400px;
+}
+form input, form textarea, form button {
+  padding: 1%;
+}
+
+form textarea {
+  min-height: 200px
+}
+form button {
+  font-family: var(--primary-font);
+}
+form button:hover {
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.errorMessage {
+  text-align: center;
+}
+.errorMessage p {
+  color: red;
+
+}
+
+
+/* ---------- Footer ---------- */
+footer {
+  margin: var(--primary-margin);
+  background-color: transparent;
+
+  padding: var(--primary-padding) 1%;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-apps {
+  height: 45px;
+  width: auto;
+  margin: auto 10px;
+}
+
+.footer-apps:hover {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+/* ---------- Breakpoints Tablet---------- */
+
+@media screen and (max-width: 1030px) {
+  header {
+    display: block;
+    text-align: center;
   }
-  a:hover {
-    color: #747bff;
+
+  nav ul {
+    justify-content: center;
+    margin-top: var(--third-margin);
   }
-  button {
-    background-color: #f9f9f9;
+
+  nav li {
+    margin: var(--third-margin);
   }
+
+  /* --- WORK SECTION --- */
+  .project {
+    width: 45%;
+  }
+}
+
+/* ---------- Breakpoints Phone ---------- */
+
+@media screen and (max-width: 760px) {
+
+  /* --- HEADER SECTION --- */
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    justify-content: center;
+    display: block;
+    margin-top: var(--third-margin);
+  }
+
+  nav li {
+    margin: 4% var(--primary-margin);
+  }
+
+  /* --- MAIN SECTION --- */
+
+  main {
+    background-color: var(--primary-color);
+  }
+
+  section {
+    border-radius: 0;
+    border-bottom: 3px solid var(--secondary-color);
+    box-shadow: none;
+  }
+
+  /* --- ABOUT SECTION --- */
+  #about div {
+    display: block;
+  }
+
+  #about img {
+    display: block;
+    margin: var(--second-margin);
+  }
+
+  #about p {
+    margin: 4% var(--second-margin);
+  }
+
+  /* --- WORK SECTION --- */
+  .project {
+    min-width: none;
+    width: 100%;
+  }
+
 }

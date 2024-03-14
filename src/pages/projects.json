@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Tahanan Candle Co.",
+        "github": "https://github.com/mjthurber/Tahanan_Candle",
+        "deploy": "https://tahanancandleco.onrender.com/",
+        "image": "../images/tahanan.png",
+        "repoLogo": "../images/github.png",
+        "deployLogo": "../images/render.png"
+    },
+    {
+        "name": "Text Editor",
+        "github": "https://github.com/maggiemcc/text-editor",
+        "deploy": "https://pwa-text-editor-roys.onrender.com/",
+        "image": "../images/pwa.png",
+        "repoLogo": "../images/github.png",
+        "deployLogo": "../images/render.png"
+    },
+    {
+        "name": "Get Your List Together",
+        "github": "https://github.com/britt-young/get_your_list_together",
+        "deploy": "https://get-your-list-together-c8df3b5b0755.herokuapp.com",
+        "image": "../images/projectTwo.png",
+        "repoLogo": "../images/github.png",
+        "deployLogo": "../images/heroku.svg"
+    },
+    {
+        "name": "Healthy Panda",
+        "github": "https://github.com/JJTheDev/Fitness-App",
+        "deploy": "https://jjthedev.github.io/Fitness-App",
+        "image": "../images/healthyPanda.png",
+        "repoLogo": "../images/github.png",
+        "deployLogo": "../images/github.png"
+    },
+    {
+        "name": "Jay Boyce",
+        "github": "https://github.com/maggiemcc/JBoyce",
+        "deploy": "https://jboyce.netlify.app/",
+        "image": "../images/boyce.png",
+        "repoLogo": "../images/github.png",
+        "deployLogo": "../images/netlify.png"
+    },
+    {
+        "name": "Weather App",
+        "github": "https://github.com/maggiemcc/weather-dashboard",
+        "deploy": "https://maggiemcc.github.io/weather-dashboard/",
+        "image": "../images/weatherApp.png",
+        "repoLogo": "../images/github.png",
+        "deployLogo": "../images/github.png"
+    },
+    {
+        "name": "National Park",
+        "github": "https://github.com/maggiemcc/uvu-projects",
+        "deploy": "https://maggie-uvu-projects.netlify.app/national_park/",
+        "image": "../images/nationalpark.png",
+        "repoLogo": "../images/github.png",
+        "deployLogo": "../images/netlify.png"
+    }
+]

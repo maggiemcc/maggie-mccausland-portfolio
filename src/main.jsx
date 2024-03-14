@@ -16,7 +16,6 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Resume from './pages/Resume.jsx';
-import noMatch from './pages/noMatch.jsx';
 import './index.css'
 
 const router = createBrowserRouter([
@@ -25,8 +24,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        index: true,
-        path: "/*",
+        path: "*",
         element: <About/>
       },
       {

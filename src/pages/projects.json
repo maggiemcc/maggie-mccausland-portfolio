@@ -3,33 +3,33 @@
         "name": "Tahanan Candle Co.",
         "github": "https://github.com/mjthurber/Tahanan_Candle",
         "deploy": "https://tahanancandleco.onrender.com/",
-        "image": "../images/tahanan.png",
-        "repoLogo": "../images/github.png",
-        "deployLogo": "../images/render.png"
+        "image": "../assets/tahanan.png",
+        "repoLogo": "../assets/github.png",
+        "deployLogo": "../assets/render.png"
     },
     {
         "name": "Text Editor",
         "github": "https://github.com/maggiemcc/text-editor",
         "deploy": "https://pwa-text-editor-roys.onrender.com/",
-        "image": "../images/pwa.png",
-        "repoLogo": "../images/github.png",
-        "deployLogo": "../images/render.png"
+        "image": "../assets/pwa.png",
+        "repoLogo": "../assets/github.png",
+        "deployLogo": "../assets/render.png"
     },
     {
         "name": "Get Your List Together",
         "github": "https://github.com/britt-young/get_your_list_together",
         "deploy": "https://get-your-list-together-c8df3b5b0755.herokuapp.com",
         "image": "../images/projectTwo.png",
-        "repoLogo": "../images/github.png",
-        "deployLogo": "../images/heroku.svg"
+        "repoLogo": "../assets/github.png",
+        "deployLogo": "../assets/heroku.svg"
     },
     {
         "name": "Healthy Panda",
         "github": "https://github.com/JJTheDev/Fitness-App",
         "deploy": "https://jjthedev.github.io/Fitness-App",
-        "image": "../images/healthyPanda.png",
-        "repoLogo": "../images/github.png",
-        "deployLogo": "../images/github.png"
+        "image": "../assets/healthyPanda.png",
+        "repoLogo": "../assets/github.png",
+        "deployLogo": "../assets/github.png"
     },
     {
         "name": "Jay Boyce",

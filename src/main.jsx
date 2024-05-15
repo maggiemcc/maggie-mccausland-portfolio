@@ -20,7 +20,7 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/maggie-mccausland-portfolio',
     element: <App />,
     children: [
       {

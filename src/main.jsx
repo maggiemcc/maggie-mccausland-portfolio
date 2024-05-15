@@ -20,7 +20,7 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: '/maggie-mccausland-portfolio',
+    path: '/',
     element: <App />,
     children: [
       {
@@ -28,23 +28,27 @@ const router = createBrowserRouter([
         element: <About/>
       },
       {
+        path: '/maggie-mccausland-portfolio/about',
         index: true,
         element: <About/>
       },
       {
-        path: 'contact',
+        path: '/maggie-mccausland-portfolio/contact',
+        // path: 'contact',
         element: <Contact/>
       },
       {
-        path: 'portfolio',
+        // path: 'portfolio',
+        path: '/maggie-mccausland-portfolio/portfolio',
         element: <Portfolio/>
       },
       {
-        path: 'resume',
+        // path: 'resume',
+        path: '/maggie-mccausland-portfolio/resume',
         element: <Resume/>
       },
     ]
   }
 
 ]);
-ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router} basename="/maggie-mccausland-portfolio" />)
+ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router} />)
